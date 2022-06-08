@@ -1,0 +1,15 @@
+income=int(input("enter the anuual income"))
+hra=int(input("enter the hra"))
+d=int(input("enter the deductions"))
+ti=income-(hra*12)-d
+ai=ti-300000
+print(ai)
+if(ai<300000):
+    print("no tax")
+elif((ai>300000)and(ai<600000)):
+    tax=(0.1*ai)
+elif((ai>600000)and(ai<1000000)):
+    tax=(0.15*ai)
+else:
+    tax=(0.2*ai)
+print(tax)
